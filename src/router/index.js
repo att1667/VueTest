@@ -5,6 +5,7 @@ import Detail from "@/components/Detail"
 import Modify from "@/components/Modify"
 import Login from "@/components/Login"
 import SignUp from "@/components/SignUp"
+import FormTest from "@/views/Form.vue"
 
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
     path: "/signup",
     name: "SignUp",
     component: SignUp
+  },
+  {
+    path: "/form",
+    name: "FormTest",
+    component: FormTest
   }
 ];
 
