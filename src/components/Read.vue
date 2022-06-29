@@ -13,6 +13,7 @@
             </tr>
         </table>
         <button @click="write">글쓰기</button>
+        <router-link class="btn" to="/form">Form Test 하러가기</router-link>
     </div>
 </template>
 
@@ -42,3 +43,14 @@ export default {
     }
 }
 </script>
+
+<style>
+.btn{
+    display: block;
+    padding: 10px 20px;
+    width: 10%;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+</style>

@@ -3,6 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import App from './App.vue'
 import router from './router'
+import axios from "axios";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDZlFQ_8bb_5yBabfboqPYB0rLuYSj7L7g",
@@ -15,6 +16,7 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 const app = createApp(App);
+app.config.globalProperties$http = axios;
 app.use(router)
 app.mount('#app')
 

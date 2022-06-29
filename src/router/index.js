@@ -6,6 +6,8 @@ import Modify from "@/components/Modify"
 import Login from "@/components/Login"
 import SignUp from "@/components/SignUp"
 import Todos from "@/components/Todos"
+import FormTest from "@/views/Form.vue"
+
 
 
 const routes = [
@@ -47,6 +49,11 @@ const routes = [
       // login에 성공한 사람만 접근 가능
       auth: true
     }
+  },
+  {
+    path: "/form",
+    name: "FormTest",
+    component: FormTest
   }
 ];
 
