@@ -5,6 +5,7 @@ import Detail from "@/components/Detail"
 import Modify from "@/components/Modify"
 import Login from "@/components/Login"
 import SignUp from "@/components/SignUp"
+import Todos from "@/components/Todos"
 
 
 const routes = [
@@ -37,6 +38,15 @@ const routes = [
     path: "/signup",
     name: "SignUp",
     component: SignUp
+  },
+  {
+    path: "/todo",
+    name: "Todos",
+    component: Todos,
+    meta: {
+      // login에 성공한 사람만 접근 가능
+      auth: true
+    }
   }
 ];
 
